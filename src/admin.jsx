@@ -10,10 +10,10 @@ const blank = { stats: { n: "", t: "" }, services: { t: "", d: "" }, projects: {
 
 async function api(password, body) {
   let r, j = {};
-  try {
-    r = await fetch("/api/save", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password, ...body }) });
-    j = await r.json();
-  } catch { throw new Error("API পাওয়া যায়নি। Vercel এ deploy করা site থেকে খুলুন।"); }
+  try { r = await fetch("/api/save", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password, ...body }) }); }
+  catch { throw new Error("Internet সংযোগ নেই বা server পাওয়া যাচ্ছে না।"); }
+  try { j = await r.json(); }
+  catch { throw new Error(r.status === 404 ? "API ফাইল (api/save.js) repo তে নেই। GitHub এ api ফোল্ডার আছে কিনা দেখুন।" : "Server error (" + r.status + ")। Vercel → Logs এ দেখুন।"); }
   if (!r.ok) throw new Error(j.error || "Error");
   return j;
 }

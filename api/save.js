@@ -1,5 +1,5 @@
 // Vercel serverless function: admin থেকে GitHub এ content commit করে।
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "POST only" });
   const { password, action, content, files = [] } = req.body || {};
   if (!process.env.ADMIN_PASSWORD || password !== process.env.ADMIN_PASSWORD)
@@ -21,4 +21,4 @@ module.exports = async (req, res) => {
     await put("src/content.json", Buffer.from(JSON.stringify(content, null, 2)).toString("base64"));
     res.json({ ok: true });
   } catch (e) { res.status(500).json({ error: e.message }); }
-};
+}
