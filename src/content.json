@@ -1,0 +1,27 @@
+{
+  "theme": 0,
+  "name": "Md Ashaful Islam",
+  "roles": ["WordPress Developer", "Landing Page Specialist", "Bug Fixing Expert", "Laravel E-commerce Support"],
+  "bio": "৩ বছরের অভিজ্ঞতা নিয়ে আমি দ্রুত, সুন্দর ও সব ডিভাইসে মানানসই WordPress landing page বানাই। Bug fixing, speed optimization আর Laravel e-commerce এর dynamic content নিয়েও কাজ করি।",
+  "photo": "",
+  "phone": "01725414721",
+  "email": "ashraful.server@gmail.com",
+  "facebook": "", "linkedin": "", "github": "",
+  "stats": [
+    {"n": "3+", "t": "বছরের অভিজ্ঞতা"},
+    {"n": "50+", "t": "Landing page তৈরি"},
+    {"n": "100%", "t": "Mobile responsive"}
+  ],
+  "services": [
+    {"t": "WordPress Landing Page", "d": "বিক্রি বাড়ানোর মতো করে সাজানো, দ্রুত লোড হওয়া ও mobile-first পেজ।"},
+    {"t": "Bug Fixing", "d": "Plugin conflict, ভাঙা layout, error আর white screen দ্রুত ঠিক করি।"},
+    {"t": "Laravel E-commerce", "d": "Admin panel থেকে product, photo ও content edit করার dynamic সিস্টেমে কাজ।"},
+    {"t": "Speed ও SEO", "d": "Core Web Vitals, image optimization আর on-page SEO।"}
+  ],
+  "projects": [
+    {"t": "Sohag Online", "d": "বর্তমানে যে কোম্পানিতে full time কাজ করছি।", "l": "https://sohagonline.com/", "img": ""},
+    {"t": "Landing Page Collection", "d": "WordPress এ বানানো বিভিন্ন business landing page।", "l": "", "img": ""},
+    {"t": "Dynamic Content Panel", "d": "Drag and drop দিয়ে photo ও content বদলানোর সিস্টেম।", "l": "", "img": ""}
+  ],
+  "skills": ["WordPress", "Elementor", "WooCommerce", "HTML5", "CSS3", "JavaScript", "Laravel", "Bug Fixing", "SEO", "Responsive Design"]
+}
